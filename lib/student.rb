@@ -1,12 +1,10 @@
 class Student < User
 attr_accessor :knowledge
 
-@@all = []
 
-def initialize(argument)
+def initialize
   @knowledge = []
 
-  @@all << self
 end
 
 def learn(string)
